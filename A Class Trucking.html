@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Class Trucking - We Haul It All From Big To Small</title>
+    <link rel="icon" type="image/png" href="aclasstrucking.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-blue': '#0a4275',
+                        'brand-gold': '#d4af37',
+                        'brand-dark': '#072140',
+                        'brand-light': '#f0f4f8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif, cursive;
+        }
+        .hero-pattern {
+            background-color: #0a4275;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-brand-light">
+    <!-- Navigation -->
+    <nav class="bg-brand-blue shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <svg class="h-12 w-12 text-brand-gold" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="image/"/>
+                        </svg>
+                        <a href="index.html"><img src="aclasstrucking.png" alt="aclasstrucking.png" width="100" height="auto"></a><span class="ml-2 text-xl font-bold font text style cursive text-brand-black">A Class Trucking</span>
+    
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center">
+                    <a href="#home" class="px-3 py-2 text-white hover:text-brand-gold font-medium">Home</a>
+                    <a href="#about" class="px-3 py-2 text-white hover:text-brand-gold font-medium">About</a>
+                    <a href="#services" class="px-3 py-2 text-white hover:text-brand-gold font-medium">Services</a>
+                    <a href="#payment" class="px-3 py-2 text-white hover:text-brand-gold font-medium">Payment</a>
+                    <a href="#contact" class="px-3 py-2 text-white hover:text-brand-gold font-medium">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-white hover:text-brand-gold focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-blue pb-4">
+            <a href="#home" class="block px-4 py-2 text-white hover:text-brand-gold font-medium">Home</a>
+            <a href="#about" class="block px-4 py-2 text-white hover:text-brand-gold font-medium">About</a>
+            <a href="#services" class="block px-4 py-2 text-white hover:text-brand-gold font-medium">Services</a>
+            <a href="#payment" class="block px-4 py-2 text-white hover:text-brand-gold font-medium">Payment</a>
+            <a href="#contact" class="block px-4 py-2 text-white hover:text-brand-gold font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+                    Professional Trucking Solutions for Your Business
+                </h1>
+                <p class="mt-4 text-xl text-brand-light">
+                    "We Haul It All From Big To Small"
+                </p>
+                <div class="mt-8">
+                    <a href="#contact" class="inline-block bg-brand-gold text-brand-blue font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
+                        Get a Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-brand-blue">About A Class Trucking</h2>
+                <div class="w-24 h-1 bg-brand-gold mx-auto mt-4"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="kenwortht800truck2.png" alt="Kenworth Truck">
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <h3 class="text-2xl font-semibold text-brand-blue mb-4">Your Trusted Trucking Partner</h3>
+                    <p class="text-gray-700 mb-4">
+                        A Class Trucking Company is a trsuted, locally owned and operated transportation and logistics committed to reliability, professionalism and exceptional customer service, A Class Trucking specializes in the safe and timely delivery of goods and services across Tortola and the surrounding islands. 
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        The 
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mt-6">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-brand-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">Excavating</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-brand-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">Trailer Hauling</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-brand-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">Flat Bed Service</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-brand-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">Experienced Drivers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-brand-blue">Our Services</h2>
+                <div class="w-24 h-1 bg-brand-gold mx-auto mt-4"></div>
+            </div>
+            
+            <div class="bg-brand-blue text-white p-6 rounded-lg shadow-lg mb-12">
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-brand-gold mr-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-bold">Services Section Under Construction</h3>
+                        <p class="mt-1">Please note that the listed services below are not offered. We're currently updating our services information to better serve you. Please check back soon for a complete list of our offerings.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 transition duration-300 service-card">
+                    <div class="w-16 h-16 bg-brand-blue rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-brand-gold" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                            <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-brand-blue mb-2">Excavating</h3>
+                    <p class="text-gray-600">Support construction, demolition, and earthmoving projects of all sizes. Whether you're clearing a site, building a foundation, or managing large-scale earthworks, A Class Trucking is your trusted partner for reliable and professional excavating trucking solutions.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 transition duration-300 service-card">
+                    <div class="w-16 h-16 bg-brand-blue rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-brand-gold" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5 2a2 2 0 00-2 2v14l3.5-2 3.5 2 3.5-2 3.5 2V4a2 2 0 00-2-2H5zm4.707 3.707a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L8.414 9H10a3 3 0 013 3v1a1 1 0 102 0v-1a5 5 0 00-5-5H8.414l1.293-1.293z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-brand-blue mb-2">Trailer Hauling</h3>
+                    <p class="text-gray-600">From job site deliveries to custom transport solutions, A Class Trucking ensures your load arrives safely and on schedule. We handle the heavy lifting—so you don’t have to. Whether you're moving heavy equipment, oversized loads, or large materials, our skilled team and versatile trailer fleet are ready to get the job done.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 transition duration-300 service-card">
+                    <div class="w-16 h-16 bg-brand-blue rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-brand-gold" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-brand-blue mb-2">Flat Bed Service</h3>
+                    <p class="text-gray-600">Our flatbed services are built on punctuality, professionalism, and the capacity to handle heavy or unique freight with ease.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 transition duration-300 service-card">
+                    <div class="w-16 h-16 bg-brand-blue rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-brand-gold" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5 2a2 2 0 00-2 2v14l3.5-2 3.5 2 3.5-2 3.5 2V4a2 2 0 00-2-2H5zm4.707 3.707a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L8.414 9H10a3 3 0 013 3v1a1 1 0 102 0v-1a5 5 0 00-5-5H8.414l1.293-1.293z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-brand-blue mb-2">Garbage Disposal</h3>
+                    <p class="text-gray-600">Provides fast, efficient, and environmentally responsible garbage disposal services for residential, commercial, and construction clients. Whether it’s daily waste removal or large-scale cleanouts, we offer tailored solutions to keep your space clean and clutter-free.
+
+                    From home renovations to job site cleanups, A Class Trucking makes garbage disposal easy, reliable, and hassle-free.
+
+                    Clean space. Clear mind. Count on A Class for the heavy lifting.</p>
+                </div>
+               <div class="bg-white rounded-lg shadow-lg p-6 transition duration-300 service-card">
+                    <div class="w-16 h-16 bg-brand-blue rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-brand-gold" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5 2a2 2 0 00-2 2v14l3.5-2 3.5 2 3.5-2 3.5 2V4a2 2 0 00-2-2H5zm4.707 3.707a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L8.414 9H10a3 3 0 013 3v1a1 1 0 102 0v-1a5 5 0 00-5-5H8.414l1.293-1.293z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-brand-blue mb-2">Towing Service</h3>
+                    <p class="text-gray-600">From minor breakdowns to major recoveries, we delivers dependable towing solutions with the professionalism you expect and the care your vehicle deserves. 
+
+                    Stuck? Stranded? We're one call way-A Class all the way.</p>
+                </div>
+                 
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-brand-blue">Payment Options</h2>
+                <div class="w-24 h-1 bg-brand-gold mx-auto mt-4"></div>
+            </div>
+            
+            <div class="bg-brand-blue rounded-lg shadow-lg p-8 text-white">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                        <h3 class="text-2xl font-bold mb-4">Flexible Payment Methods</h3>
+                        <p class="mb-4">At A Class Trucking, we understand the importance of convenient payment options for our clients. We accept the following payment methods:</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-brand-gold rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold">Cash</h4>
+                                    <p class="text-gray-300">Pay with cash upon delivery or pickup</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-brand-gold rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold">Cheque</h4>
+                                    <p class="text-gray-300">Company or certified cheques accepted</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 md:border-l md:border-brand-gold md:pl-8">
+                        <h3 class="text-2xl font-bold mb-4">Payment Process</h3>
+                        <ol class="space-y-4">
+                            <li class="flex">
+                                <span class="w-8 h-8 rounded-full bg-brand-gold text-brand-blue flex items-center justify-center mr-3 flex-shrink-0">1</span>
+                                <p>Receive your detailed invoice via email or in person</p>
+                            </li>
+                            <li class="flex">
+                                <span class="w-8 h-8 rounded-full bg-brand-gold text-brand-blue flex items-center justify-center mr-3 flex-shrink-0">2</span>
+                                <p>Review the invoice and contact us with any questions</p>
+                            </li>
+                            <li class="flex">
+                                <span class="w-8 h-8 rounded-full bg-brand-gold text-brand-blue flex items-center justify-center mr-3 flex-shrink-0">3</span>
+                                <p>Make payment using your preferred method</p>
+                            </li>
+                            <li class="flex">
+                                <span class="w-8 h-8 rounded-full bg-brand-gold text-brand-blue flex items-center justify-center mr-3 flex-shrink-0">4</span>
+                                <p>Receive a payment confirmation receipt</p>
+                            </li>
+                        </ol>
+                        
+                        <div class="mt-6 p-4 bg-yellow-100 text-brand-blue rounded-lg">
+                            <p class="font-medium">For questions about payment options or to discuss special arrangements, please contact our accounting department.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-brand-blue">Contact Us</h2>
+                <div class="w-24 h-1 bg-brand-gold mx-auto mt-4"></div>
+                <p class="mt-4 text-gray-600">Get in touch with our team for inquiries or to request a quote</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-brand-blue p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-gold mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold">Address</h4>
+                                    <p class="text-gray-300">Road Town, Tortola, BVI</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-gold mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold">Phone</h4>
+                                    <p class="text-gray-300">(284) 345-2618</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-gold mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p class="text-gray-300">awheatley98@hotmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-gold mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold">Business Hours</h4>
+                                    <p class="text-gray-300">Monday - Sunday: Open Always</p>
+                                    <p class="text-gray-300">Please Feel Free To Give Us A Call To Confirm Our Availability</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-semibold mb-3">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 rounded-full bg-brand-gold text-brand-blue flex items-center justify-center hover:bg-yellow-400 transition duration-300">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-brand-gold text-brand-blue flex items-center justify-center hover:bg-yellow-400 transition duration-300">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-1-.02-2.278-1.39-2.278-1.39 0-1.601 1.084-1.601 2.205v4.25H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-brand-gold text-brand-blue flex items-center justify-center hover:bg-yellow-400 transition duration-300">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold text-brand-blue mb-6">Send Us a Message</h3>
+                        
+                        <form id="contact-form" class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="name" class="block text-gray-700 font-medium mb-1">Name</label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 font-medium mb-1">Email</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-gray-700 font-medium mb-1">Subject</label>
+                                <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-1">Message</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue"></textarea>
+                            </div>
+                            
+                            <div>
+                                <button type="submit" class="w-full bg-brand-blue text-white font-bold py-3 px-6 rounded-lg hover:bg-brand-dark transition duration-300">Send Message</button>
+                            </div>
+                        </form>
+                        
+                        <div id="form-success" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
+                            Thank you for your message! We'll get back to you shortly.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-10 w-10 text-brand-gold" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold">A Class Trucking</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">We Haul It All From Big To Small</p>
+                    <p class="text-gray-400">&copy; 2025 A Class Trucking. All rights reserved.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-brand-gold transition duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-brand-gold transition duration-300">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-brand-gold transition duration-300">Services</a></li>
+                        <li><a href="#payment" class="text-gray-400 hover:text-brand-gold transition duration-300">Payment</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-brand-gold transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates and special offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-brand-gold text-brand-blue px-4 py-2 rounded-r-lg font-medium hover:bg-yellow-500 transition duration-300">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Contact form submission
+        const contactForm = document.getElementById('contact-form');
+        const formSuccess = document.getElementById('form-success');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real implementation, you would send the form data to a server
+            // For this demo, we'll just show the success message
+            formSuccess.classList.remove('hidden');
+            contactForm.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                formSuccess.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94dc2bfd91cd288a',t:'MTc0OTU5MzE0NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
